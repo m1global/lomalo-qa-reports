@@ -1,0 +1,83 @@
+{
+  "repo": "rmi-merchants",
+  "platform": "android",
+  "branch": "93/merge",
+  "sha": "ebbff00248c98ca12046a2d7a4ac3141effabdc3",
+  "shortSha": "ebbff00",
+  "commitUrl": "https://github.com/m1global/rmi-merchant/commit/ebbff00248c98ca12046a2d7a4ac3141effabdc3",
+  "runUrl": "https://github.com/m1global/rmi-merchant/actions/runs/36896349878",
+  "timestamp": "2026-10-01T17:39:26.914Z",
+  "fileSafeId": "2026-10-01T17-39-26-914Z-ebbff00",
+  "totalFlows": 11,
+  "passed": 5,
+  "failed": 6,
+  "totalDurationSeconds": 1313.5700000000002,
+  "flows": [
+    {
+      "name": "start-and-end-session",
+      "durationSeconds": 180.31,
+      "status": "failed",
+      "failureMessage": "Assertion is false: id: operator-selector-add-operator-button is visible"
+    },
+    {
+      "name": "invalid-amount",
+      "durationSeconds": 98.914,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "complete-checkout",
+      "durationSeconds": 46.021,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "critical-path",
+      "durationSeconds": 165.843,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "generate-qr",
+      "durationSeconds": 93.74,
+      "status": "failed",
+      "failureMessage": "Assertion is false: id: invoice-generate-qr-button is visible"
+    },
+    {
+      "name": "invalid-amount",
+      "durationSeconds": 98.013,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "save-draft-then-send",
+      "durationSeconds": 93.188,
+      "status": "failed",
+      "failureMessage": "Assertion is false: id: invoice-bill-to-trigger is visible"
+    },
+    {
+      "name": "send-to-user",
+      "durationSeconds": 95.257,
+      "status": "failed",
+      "failureMessage": "Assertion is false: id: invoice-bill-to-trigger is visible"
+    },
+    {
+      "name": "tab-lock-negative-permission",
+      "durationSeconds": 175.42,
+      "status": "failed",
+      "failureMessage": "Assertion is false: id: operator-selector-add-operator-button is visible"
+    },
+    {
+      "name": "wrong-pin-then-correct",
+      "durationSeconds": 175.461,
+      "status": "failed",
+      "failureMessage": "Assertion is false: id: operator-selector-add-operator-button is visible"
+    },
+    {
+      "name": "register",
+      "durationSeconds": 91.403,
+      "status": "passed",
+      "failureMessage": null
+    }
+  ]
+}
