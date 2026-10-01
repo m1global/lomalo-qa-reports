@@ -9,10 +9,7 @@
 <body class="bg-gray-950 text-gray-100 min-h-screen antialiased">
   <header class="border-b border-gray-800/80">
     <div class="max-w-5xl mx-auto px-5 pt-10 pb-6">
-      <div class="flex items-center gap-2.5">
-        <div class="w-2 h-2 rounded-full bg-blue-500"></div>
-        <h1 class="text-lg font-semibold tracking-tight">Lomalo QA Reports</h1>
-      </div>
+      <h1 class="text-lg font-semibold tracking-tight">Lomalo QA Reports</h1>
       <p class="text-sm text-gray-500 mt-1.5">
         Maestro E2E runs for rmi-wallet and rmi-merchants, newest first.
       </p>
@@ -101,7 +98,7 @@
             ? `<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-md text-xs font-semibold bg-emerald-500/10 text-emerald-400 ring-1 ring-inset ring-emerald-500/20">PASS</span>`
             : `<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-md text-xs font-semibold bg-red-500/10 text-red-400 ring-1 ring-inset ring-red-500/20">FAIL</span>`;
           const detailLink = r.detailPath
-            ? `<a class="text-blue-400 hover:text-blue-300 font-medium transition-colors" href="${r.detailPath}">DETAILS</a>`
+            ? `<a class="text-blue-400 hover:text-blue-300 font-medium transition-colors" href="${r.detailPath}">Details</a>`
             : "";
           const commitLink = r.commitUrl
             ? `<a class="text-blue-400 hover:text-blue-300 transition-colors" href="${r.commitUrl}"><code class="bg-gray-800/80 px-1.5 py-0.5 rounded text-xs">${r.shortSha ?? ""}</code></a>`
