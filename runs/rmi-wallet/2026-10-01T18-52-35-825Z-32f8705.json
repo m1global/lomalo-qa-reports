@@ -1,0 +1,23 @@
+{
+  "repo": "rmi-wallet",
+  "platform": "android-debug",
+  "branch": "199/merge",
+  "sha": "32f870565cf7fd15fd92d80ba9b14c7f1710c081",
+  "shortSha": "32f8705",
+  "commitUrl": "https://github.com/m1global/rmi-wallet/commit/32f870565cf7fd15fd92d80ba9b14c7f1710c081",
+  "runUrl": "https://github.com/m1global/rmi-wallet/actions/runs/36908395825",
+  "timestamp": "2026-10-01T18:52:35.825Z",
+  "fileSafeId": "2026-10-01T18-52-35-825Z-32f8705",
+  "totalFlows": 1,
+  "passed": 0,
+  "failed": 1,
+  "totalDurationSeconds": 0,
+  "flows": [
+    {
+      "name": "swap-leave-and-recover",
+      "durationSeconds": 0,
+      "status": "failed",
+      "failureMessage": "No result produced for this flow — the CI step likely crashed or was interrupted before it ran."
+    }
+  ]
+}
