@@ -1,0 +1,89 @@
+{
+  "repo": "rmi-wallet",
+  "platform": "ios",
+  "branch": "199/merge",
+  "sha": "1730eee17552b221ef5c06659977a63e0b81249e",
+  "shortSha": "1730eee",
+  "commitUrl": "https://github.com/m1global/rmi-wallet/commit/1730eee17552b221ef5c06659977a63e0b81249e",
+  "runUrl": "https://github.com/m1global/rmi-wallet/actions/runs/36923701773",
+  "timestamp": "2026-10-01T21:26:01.499Z",
+  "fileSafeId": "2026-10-01T21-26-01-499Z-1730eee",
+  "totalFlows": 12,
+  "passed": 11,
+  "failed": 1,
+  "totalDurationSeconds": 856.98,
+  "flows": [
+    {
+      "name": "critical-path",
+      "durationSeconds": 352.397,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "accept-invite-decline",
+      "durationSeconds": 30.029,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "accept-invite-invalid-link",
+      "durationSeconds": 39.489,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "accept-invite-unknown-invitation",
+      "durationSeconds": 31.796,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "pay-deep-link-add-contact",
+      "durationSeconds": 40.604,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "pay-deep-link-happy-path",
+      "durationSeconds": 61.898,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "pay-deep-link-self",
+      "durationSeconds": 27.971,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "pay-deep-link-unknown-recipient",
+      "durationSeconds": 28.542,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "send-insufficient-funds",
+      "durationSeconds": 125.62,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "send",
+      "durationSeconds": 21.365,
+      "status": "failed",
+      "failureMessage": "Element not found: Id matching regex: quick-actions-transfer"
+    },
+    {
+      "name": "swap-insufficient-funds",
+      "durationSeconds": 44.923,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "swap",
+      "durationSeconds": 52.346,
+      "status": "passed",
+      "failureMessage": null
+    }
+  ]
+}
