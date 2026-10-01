@@ -53,27 +53,36 @@
     function renderFlows(flows) {
       const tbody = document.getElementById("flows-body");
       tbody.innerHTML = (flows || [])
-        .map((f) => {
+        .map((f, i) => {
           const passed = f.status === "passed";
           const badgeClass = passed
             ? "bg-emerald-500/15 text-emerald-400"
             : "bg-red-500/15 text-red-400";
+          const clickable = !!f.failureMessage;
           const row = `
-            <tr class="border-b ${f.failureMessage ? "" : "border-gray-800 last:border-0"} hover:bg-gray-900/60">
+            <tr class="border-b border-gray-800 last:border-0 hover:bg-gray-900/60${clickable ? " cursor-pointer" : ""}"${clickable ? ` data-toggle="failure-${i}"` : ""}>
               <td class="px-4 py-3"><span class="inline-block px-2.5 py-0.5 rounded-full text-xs font-semibold ${badgeClass}">${passed ? "PASS" : "FAIL"}</span></td>
-              <td class="px-4 py-3 text-gray-300">${f.name}</td>
+              <td class="px-4 py-3 text-gray-300">${f.name}${clickable ? ' <span class="text-gray-600">▾</span>' : ""}</td>
               <td class="px-4 py-3 text-gray-300">${formatDuration(f.durationSeconds)}</td>
             </tr>`;
-          const failureRow = f.failureMessage
+          const failureRow = clickable
             ? `
-            <tr class="border-b border-gray-800 last:border-0">
-              <td></td>
-              <td class="px-4 pb-3 -mt-2 text-xs text-red-400/80 font-mono" colspan="2">${f.failureMessage}</td>
+            <tr id="failure-${i}" class="border-b border-gray-800 last:border-0" hidden>
+              <td class="px-4 pb-3" colspan="3">
+                <div class="px-3 py-2 rounded bg-gray-900 text-xs text-red-400/80 font-mono break-words">${f.failureMessage}</div>
+              </td>
             </tr>`
             : "";
           return row + failureRow;
         })
         .join("");
+
+      tbody.querySelectorAll("tr[data-toggle]").forEach((tr) => {
+        tr.addEventListener("click", () => {
+          const target = document.getElementById(tr.dataset.toggle);
+          if (target) target.hidden = !target.hidden;
+        });
+      });
     }
 
     const params = new URLSearchParams(window.location.search);
