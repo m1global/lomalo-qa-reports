@@ -78,7 +78,7 @@
             ? `<span class="inline-block px-2.5 py-0.5 rounded-full text-xs font-semibold bg-emerald-500/15 text-emerald-400">PASS</span>`
             : `<span class="inline-block px-2.5 py-0.5 rounded-full text-xs font-semibold bg-red-500/15 text-red-400">FAIL</span>`;
           const detailLink = r.detailPath
-            ? `<a class="text-blue-400 hover:underline" href="${r.detailPath}">details</a>`
+            ? `<a class="text-blue-400 hover:underline" href="${r.detailPath}">DETAILS</a>`
             : "";
           const commitLink = r.commitUrl
             ? `<a class="text-blue-400 hover:underline" href="${r.commitUrl}"><code class="bg-gray-900 px-1.5 py-0.5 rounded">${r.shortSha ?? ""}</code></a>`
