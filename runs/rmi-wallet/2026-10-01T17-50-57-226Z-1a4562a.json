@@ -1,0 +1,71 @@
+{
+  "repo": "rmi-wallet",
+  "platform": "android",
+  "branch": "199/merge",
+  "sha": "1a4562ac9ff5a247aec317e9b561b254d1fb08f7",
+  "shortSha": "1a4562a",
+  "commitUrl": "https://github.com/m1global/rmi-wallet/commit/1a4562ac9ff5a247aec317e9b561b254d1fb08f7",
+  "runUrl": "https://github.com/m1global/rmi-wallet/actions/runs/36899856978",
+  "timestamp": "2026-10-01T17:50:57.226Z",
+  "fileSafeId": "2026-10-01T17-50-57-226Z-1a4562a",
+  "totalFlows": 9,
+  "passed": 4,
+  "failed": 5,
+  "totalDurationSeconds": 480.95899999999995,
+  "flows": [
+    {
+      "name": "critical-path",
+      "durationSeconds": 251.945,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "pay-deep-link-add-contact",
+      "durationSeconds": 21.408,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "pay-deep-link-happy-path",
+      "durationSeconds": 42.106,
+      "status": "failed",
+      "failureMessage": "Assertion is false: id: confirm-request-button is visible"
+    },
+    {
+      "name": "pay-deep-link-self",
+      "durationSeconds": 18.668,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "pay-deep-link-unknown-recipient",
+      "durationSeconds": 16.549,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "send-insufficient-funds",
+      "durationSeconds": 18.183,
+      "status": "failed",
+      "failureMessage": "Element not found: Id matching regex: center-action-button"
+    },
+    {
+      "name": "send",
+      "durationSeconds": 18.219,
+      "status": "failed",
+      "failureMessage": "Element not found: Id matching regex: center-action-button"
+    },
+    {
+      "name": "swap-insufficient-funds",
+      "durationSeconds": 7.962,
+      "status": "failed",
+      "failureMessage": "Assertion is false: id: save-card-swap is visible"
+    },
+    {
+      "name": "swap",
+      "durationSeconds": 85.919,
+      "status": "failed",
+      "failureMessage": "Assertion is false: \"Done\" is visible"
+    }
+  ]
+}
