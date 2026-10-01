@@ -1,0 +1,95 @@
+{
+  "repo": "rmi-wallet",
+  "platform": "android",
+  "branch": "199/merge",
+  "sha": "a0d067aa4e29bae730000e3d5799138889e71421",
+  "shortSha": "a0d067a",
+  "commitUrl": "https://github.com/m1global/rmi-wallet/commit/a0d067aa4e29bae730000e3d5799138889e71421",
+  "runUrl": "https://github.com/m1global/rmi-wallet/actions/runs/36906242233",
+  "timestamp": "2026-10-01T18:43:42.546Z",
+  "fileSafeId": "2026-10-01T18-43-42-546Z-a0d067a",
+  "totalFlows": 13,
+  "passed": 9,
+  "failed": 4,
+  "totalDurationSeconds": 571.599,
+  "flows": [
+    {
+      "name": "critical-path",
+      "durationSeconds": 249.562,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "pay-deep-link-add-contact",
+      "durationSeconds": 20.457,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "pay-deep-link-happy-path",
+      "durationSeconds": 47.795,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "pay-deep-link-self",
+      "durationSeconds": 18.293,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "pay-deep-link-unknown-recipient",
+      "durationSeconds": 16.609,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "send-insufficient-funds",
+      "durationSeconds": 62.487,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "send",
+      "durationSeconds": 74.191,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "swap-insufficient-funds",
+      "durationSeconds": 25.426,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "swap",
+      "durationSeconds": 56.779,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "qr-happy-path",
+      "durationSeconds": 0,
+      "status": "failed",
+      "failureMessage": "No result produced for this flow — the CI step likely crashed or was interrupted before it ran."
+    },
+    {
+      "name": "qr-add-contact",
+      "durationSeconds": 0,
+      "status": "failed",
+      "failureMessage": "No result produced for this flow — the CI step likely crashed or was interrupted before it ran."
+    },
+    {
+      "name": "qr-self",
+      "durationSeconds": 0,
+      "status": "failed",
+      "failureMessage": "No result produced for this flow — the CI step likely crashed or was interrupted before it ran."
+    },
+    {
+      "name": "qr-unknown-recipient",
+      "durationSeconds": 0,
+      "status": "failed",
+      "failureMessage": "No result produced for this flow — the CI step likely crashed or was interrupted before it ran."
+    }
+  ]
+}
