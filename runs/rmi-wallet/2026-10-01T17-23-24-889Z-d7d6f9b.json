@@ -1,0 +1,71 @@
+{
+  "repo": "rmi-wallet",
+  "platform": "android",
+  "branch": "199/merge",
+  "sha": "d7d6f9b9cab1ff7e9b0a89bdb37c83b0cd5125e9",
+  "shortSha": "d7d6f9b",
+  "commitUrl": "https://github.com/m1global/rmi-wallet/commit/d7d6f9b9cab1ff7e9b0a89bdb37c83b0cd5125e9",
+  "runUrl": "https://github.com/m1global/rmi-wallet/actions/runs/36896426673",
+  "timestamp": "2026-10-01T17:23:24.889Z",
+  "fileSafeId": "2026-10-01T17-23-24-889Z-d7d6f9b",
+  "totalFlows": 9,
+  "passed": 7,
+  "failed": 2,
+  "totalDurationSeconds": 483.29200000000003,
+  "flows": [
+    {
+      "name": "critical-path",
+      "durationSeconds": 246.789,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "pay-deep-link-add-contact",
+      "durationSeconds": 20.541,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "pay-deep-link-happy-path",
+      "durationSeconds": 74.162,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "pay-deep-link-self",
+      "durationSeconds": 18.17,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "pay-deep-link-unknown-recipient",
+      "durationSeconds": 16.747,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "send-insufficient-funds",
+      "durationSeconds": 18.353,
+      "status": "failed",
+      "failureMessage": "Element not found: Id matching regex: center-action-button"
+    },
+    {
+      "name": "send",
+      "durationSeconds": 18.434,
+      "status": "failed",
+      "failureMessage": "Element not found: Id matching regex: center-action-button"
+    },
+    {
+      "name": "swap-insufficient-funds",
+      "durationSeconds": 19.64,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "swap",
+      "durationSeconds": 50.456,
+      "status": "passed",
+      "failureMessage": null
+    }
+  ]
+}
