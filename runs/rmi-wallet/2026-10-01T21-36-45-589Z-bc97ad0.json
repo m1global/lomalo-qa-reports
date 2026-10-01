@@ -1,0 +1,89 @@
+{
+  "repo": "rmi-wallet",
+  "platform": "ios",
+  "branch": "199/merge",
+  "sha": "bc97ad0bae0570973f7a5e0fa261778128a5141a",
+  "shortSha": "bc97ad0",
+  "commitUrl": "https://github.com/m1global/rmi-wallet/commit/bc97ad0bae0570973f7a5e0fa261778128a5141a",
+  "runUrl": "https://github.com/m1global/rmi-wallet/actions/runs/36926790178",
+  "timestamp": "2026-10-01T21:36:45.589Z",
+  "fileSafeId": "2026-10-01T21-36-45-589Z-bc97ad0",
+  "totalFlows": 12,
+  "passed": 8,
+  "failed": 4,
+  "totalDurationSeconds": 493.17799999999994,
+  "flows": [
+    {
+      "name": "critical-path",
+      "durationSeconds": 215.297,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "accept-invite-decline",
+      "durationSeconds": 19.96,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "accept-invite-invalid-link",
+      "durationSeconds": 19.897,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "accept-invite-unknown-invitation",
+      "durationSeconds": 22.182,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "pay-deep-link-add-contact",
+      "durationSeconds": 21.063,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "pay-deep-link-happy-path",
+      "durationSeconds": 39.143,
+      "status": "failed",
+      "failureMessage": "Assertion is false: id: confirm-request-button is visible"
+    },
+    {
+      "name": "pay-deep-link-self",
+      "durationSeconds": 18.921,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "pay-deep-link-unknown-recipient",
+      "durationSeconds": 17.907,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "send-insufficient-funds",
+      "durationSeconds": 18.034,
+      "status": "failed",
+      "failureMessage": "Element not found: Id matching regex: center-action-button"
+    },
+    {
+      "name": "send",
+      "durationSeconds": 56.532,
+      "status": "failed",
+      "failureMessage": "Element not found: Id matching regex: save-contact-button-1"
+    },
+    {
+      "name": "swap-insufficient-funds",
+      "durationSeconds": 30.027,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "swap",
+      "durationSeconds": 14.215,
+      "status": "failed",
+      "failureMessage": "Assertion is false: id: continue-button is visible"
+    }
+  ]
+}
