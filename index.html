@@ -6,39 +6,52 @@
   <title>Lomalo QA Reports</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-950 text-gray-100 min-h-screen">
-  <header class="max-w-5xl mx-auto px-5 pt-8 pb-4">
-    <h1 class="text-xl font-semibold">Lomalo QA Reports</h1>
-    <p class="text-sm text-gray-400 mt-1">Maestro E2E runs for rmi-wallet and rmi-merchants, newest first.</p>
+<body class="bg-gray-950 text-gray-100 min-h-screen antialiased">
+  <header class="border-b border-gray-800/80">
+    <div class="max-w-5xl mx-auto px-5 pt-10 pb-6">
+      <div class="flex items-center gap-2.5">
+        <div class="w-2 h-2 rounded-full bg-blue-500"></div>
+        <h1 class="text-lg font-semibold tracking-tight">Lomalo QA Reports</h1>
+      </div>
+      <p class="text-sm text-gray-500 mt-1.5">
+        Maestro E2E runs for rmi-wallet and rmi-merchants, newest first.
+      </p>
+    </div>
   </header>
 
-  <main class="max-w-5xl mx-auto px-5 pb-16">
-    <div id="filters" class="flex gap-2 flex-wrap mb-5">
-      <button data-repo="all" class="filter-btn px-4 py-1.5 rounded-full text-sm border border-gray-700 bg-gray-900 text-blue-400 border-blue-500">All</button>
-      <button data-repo="rmi-wallet" class="filter-btn px-4 py-1.5 rounded-full text-sm border border-gray-700 bg-gray-900 hover:border-gray-500">rmi-wallet</button>
-      <button data-repo="rmi-merchants" class="filter-btn px-4 py-1.5 rounded-full text-sm border border-gray-700 bg-gray-900 hover:border-gray-500">rmi-merchants</button>
+  <main class="max-w-5xl mx-auto px-5 py-8">
+    <div id="filters" class="flex gap-1.5 flex-wrap mb-6 p-1 bg-gray-900/60 border border-gray-800 rounded-lg w-fit">
+      <button data-repo="all" class="filter-btn px-3.5 py-1.5 rounded-md text-sm font-medium transition-colors bg-gray-800 text-gray-100">All</button>
+      <button data-repo="rmi-wallet" class="filter-btn px-3.5 py-1.5 rounded-md text-sm font-medium transition-colors text-gray-400 hover:text-gray-200">rmi-wallet</button>
+      <button data-repo="rmi-merchants" class="filter-btn px-3.5 py-1.5 rounded-md text-sm font-medium transition-colors text-gray-400 hover:text-gray-200">rmi-merchants</button>
     </div>
 
-    <div class="overflow-x-auto rounded-lg border border-gray-800">
+    <div class="overflow-x-auto rounded-xl border border-gray-800 bg-gray-900/30">
       <table class="w-full text-sm">
         <thead>
-          <tr class="text-left text-xs uppercase tracking-wide text-gray-400 border-b border-gray-800">
-            <th class="px-4 py-3 font-medium">Status</th>
-            <th class="px-4 py-3 font-medium">Repo</th>
-            <th class="px-4 py-3 font-medium">Platform</th>
-            <th class="px-4 py-3 font-medium">Branch</th>
-            <th class="px-4 py-3 font-medium">Commit</th>
-            <th class="px-4 py-3 font-medium">Flows</th>
-            <th class="px-4 py-3 font-medium">Duration</th>
-            <th class="px-4 py-3 font-medium">When</th>
-            <th class="px-4 py-3 font-medium"></th>
+          <tr class="text-left text-[11px] uppercase tracking-wider text-gray-500 border-b border-gray-800">
+            <th class="px-4 py-3 font-semibold">Status</th>
+            <th class="px-4 py-3 font-semibold">Repo</th>
+            <th class="px-4 py-3 font-semibold">Platform</th>
+            <th class="px-4 py-3 font-semibold">Branch</th>
+            <th class="px-4 py-3 font-semibold">Commit</th>
+            <th class="px-4 py-3 font-semibold">Flows</th>
+            <th class="px-4 py-3 font-semibold">Duration</th>
+            <th class="px-4 py-3 font-semibold">When</th>
+            <th class="px-4 py-3 font-semibold"></th>
           </tr>
         </thead>
-        <tbody id="runs-body"></tbody>
+        <tbody id="runs-body" class="divide-y divide-gray-800/70"></tbody>
       </table>
-      <div id="empty-state" class="text-center text-gray-500 py-12" hidden>No runs published yet.</div>
+      <div id="empty-state" class="text-center text-gray-500 py-16 text-sm" hidden>No runs published yet.</div>
     </div>
   </main>
+
+  <footer class="max-w-5xl mx-auto px-5 pb-10 pt-2">
+    <p class="text-xs text-gray-600">
+      Auto-published by CI after every Maestro run — never edited by hand.
+    </p>
+  </footer>
 
   <script>
     let allRuns = [];
@@ -85,25 +98,25 @@
         .map((r) => {
           const allPassed = r.failed === 0;
           const badge = allPassed
-            ? `<span class="inline-block px-2.5 py-0.5 rounded-full text-xs font-semibold bg-emerald-500/15 text-emerald-400">PASS</span>`
-            : `<span class="inline-block px-2.5 py-0.5 rounded-full text-xs font-semibold bg-red-500/15 text-red-400">FAIL</span>`;
+            ? `<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-md text-xs font-semibold bg-emerald-500/10 text-emerald-400 ring-1 ring-inset ring-emerald-500/20">PASS</span>`
+            : `<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-md text-xs font-semibold bg-red-500/10 text-red-400 ring-1 ring-inset ring-red-500/20">FAIL</span>`;
           const detailLink = r.detailPath
-            ? `<a class="text-blue-400 hover:underline" href="${r.detailPath}">DETAILS</a>`
+            ? `<a class="text-blue-400 hover:text-blue-300 font-medium transition-colors" href="${r.detailPath}">DETAILS</a>`
             : "";
           const commitLink = r.commitUrl
-            ? `<a class="text-blue-400 hover:underline" href="${r.commitUrl}"><code class="bg-gray-900 px-1.5 py-0.5 rounded">${r.shortSha ?? ""}</code></a>`
-            : `<code class="bg-gray-900 px-1.5 py-0.5 rounded">${r.shortSha ?? ""}</code>`;
+            ? `<a class="text-blue-400 hover:text-blue-300 transition-colors" href="${r.commitUrl}"><code class="bg-gray-800/80 px-1.5 py-0.5 rounded text-xs">${r.shortSha ?? ""}</code></a>`
+            : `<code class="bg-gray-800/80 px-1.5 py-0.5 rounded text-xs">${r.shortSha ?? ""}</code>`;
           return `
-            <tr class="border-b border-gray-800 last:border-0 hover:bg-gray-900/60">
-              <td class="px-4 py-3">${badge}</td>
-              <td class="px-4 py-3"><span class="inline-block px-2 py-0.5 rounded bg-gray-900 border border-gray-800 text-xs">${r.repo}</span></td>
-              <td class="px-4 py-3 text-gray-300">${platformLabel(r.platform) ?? "—"}</td>
-              <td class="px-4 py-3 text-gray-300">${r.branch ?? "—"}</td>
-              <td class="px-4 py-3">${commitLink}</td>
-              <td class="px-4 py-3 text-gray-300">${r.passed}/${r.totalFlows}</td>
-              <td class="px-4 py-3 text-gray-300">${formatDuration(r.totalDurationSeconds)}</td>
-              <td class="px-4 py-3 text-gray-400">${formatWhen(r.timestamp)}</td>
-              <td class="px-4 py-3">${detailLink}</td>
+            <tr class="hover:bg-gray-900/60 transition-colors">
+              <td class="px-4 py-3.5">${badge}</td>
+              <td class="px-4 py-3.5"><span class="inline-block px-2 py-0.5 rounded bg-gray-800/80 text-xs text-gray-300">${r.repo}</span></td>
+              <td class="px-4 py-3.5 text-gray-300">${platformLabel(r.platform) ?? "—"}</td>
+              <td class="px-4 py-3.5 text-gray-300">${r.branch ?? "—"}</td>
+              <td class="px-4 py-3.5">${commitLink}</td>
+              <td class="px-4 py-3.5 text-gray-300 tabular-nums">${r.passed}/${r.totalFlows}</td>
+              <td class="px-4 py-3.5 text-gray-400 tabular-nums">${formatDuration(r.totalDurationSeconds)}</td>
+              <td class="px-4 py-3.5 text-gray-500">${formatWhen(r.timestamp)}</td>
+              <td class="px-4 py-3.5 text-right">${detailLink}</td>
             </tr>`;
         })
         .join("");
@@ -115,9 +128,9 @@
       activeRepo = btn.dataset.repo;
       document.querySelectorAll(".filter-btn").forEach((b) => {
         const isActive = b === btn;
-        b.classList.toggle("text-blue-400", isActive);
-        b.classList.toggle("border-blue-500", isActive);
-        b.classList.toggle("border-gray-700", !isActive);
+        b.classList.toggle("bg-gray-800", isActive);
+        b.classList.toggle("text-gray-100", isActive);
+        b.classList.toggle("text-gray-400", !isActive);
       });
       render();
     });
