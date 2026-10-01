@@ -1,0 +1,95 @@
+{
+  "repo": "rmi-wallet",
+  "platform": "android",
+  "branch": "199/merge",
+  "sha": "1730eee17552b221ef5c06659977a63e0b81249e",
+  "shortSha": "1730eee",
+  "commitUrl": "https://github.com/m1global/rmi-wallet/commit/1730eee17552b221ef5c06659977a63e0b81249e",
+  "runUrl": "https://github.com/m1global/rmi-wallet/actions/runs/36923701790",
+  "timestamp": "2026-10-01T21:06:11.701Z",
+  "fileSafeId": "2026-10-01T21-06-11-701Z-1730eee",
+  "totalFlows": 13,
+  "passed": 9,
+  "failed": 4,
+  "totalDurationSeconds": 547.28,
+  "flows": [
+    {
+      "name": "critical-path",
+      "durationSeconds": 244.359,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "accept-invite-decline",
+      "durationSeconds": 19.316,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "accept-invite-invalid-link",
+      "durationSeconds": 19.794,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "accept-invite-unknown-invitation",
+      "durationSeconds": 22.371,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "pay-deep-link-add-contact",
+      "durationSeconds": 20.527,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "pay-deep-link-happy-path",
+      "durationSeconds": 46.539,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "pay-deep-link-self",
+      "durationSeconds": 18.491,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "pay-deep-link-unknown-recipient",
+      "durationSeconds": 16.563,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "send-insufficient-funds",
+      "durationSeconds": 18.326,
+      "status": "failed",
+      "failureMessage": "Element not found: Id matching regex: center-action-button"
+    },
+    {
+      "name": "send",
+      "durationSeconds": 18.277,
+      "status": "failed",
+      "failureMessage": "Element not found: Id matching regex: center-action-button"
+    },
+    {
+      "name": "swap-insufficient-funds",
+      "durationSeconds": 7.448,
+      "status": "failed",
+      "failureMessage": "Assertion is false: id: save-card-swap is visible"
+    },
+    {
+      "name": "swap-leave-and-recover",
+      "durationSeconds": 33.641,
+      "status": "failed",
+      "failureMessage": "Assertion is false: id: swap-pending-dismiss-button is visible"
+    },
+    {
+      "name": "swap",
+      "durationSeconds": 61.628,
+      "status": "passed",
+      "failureMessage": null
+    }
+  ]
+}
