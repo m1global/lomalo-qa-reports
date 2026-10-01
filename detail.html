@@ -33,6 +33,11 @@
       return value ? value.charAt(0).toUpperCase() + value.slice(1) : value;
     }
 
+    function platformLabel(platform) {
+      const known = { ios: "iOS", android: "Android" };
+      return known[platform] ?? capitalize(platform);
+    }
+
     function formatDuration(seconds) {
       if (seconds == null) return "—";
       const m = Math.floor(seconds / 60);
@@ -53,12 +58,20 @@
           const badgeClass = passed
             ? "bg-emerald-500/15 text-emerald-400"
             : "bg-red-500/15 text-red-400";
-          return `
-            <tr class="border-b border-gray-800 last:border-0 hover:bg-gray-900/60">
+          const row = `
+            <tr class="border-b ${f.failureMessage ? "" : "border-gray-800 last:border-0"} hover:bg-gray-900/60">
               <td class="px-4 py-3"><span class="inline-block px-2.5 py-0.5 rounded-full text-xs font-semibold ${badgeClass}">${passed ? "PASS" : "FAIL"}</span></td>
               <td class="px-4 py-3 text-gray-300">${f.name}</td>
               <td class="px-4 py-3 text-gray-300">${formatDuration(f.durationSeconds)}</td>
             </tr>`;
+          const failureRow = f.failureMessage
+            ? `
+            <tr class="border-b border-gray-800 last:border-0">
+              <td></td>
+              <td class="px-4 pb-3 -mt-2 text-xs text-red-400/80 font-mono" colspan="2">${f.failureMessage}</td>
+            </tr>`
+            : "";
+          return row + failureRow;
         })
         .join("");
     }
@@ -80,7 +93,7 @@
             `${run.repo} — ${run.branch} @ ${run.shortSha}`;
           document.getElementById("subtitle").innerHTML = `
             ${run.passed}/${run.totalFlows} flows passed · ${formatDuration(run.totalDurationSeconds)} ·
-            ${capitalize(run.platform) ?? "—"} ·
+            ${platformLabel(run.platform) ?? "—"} ·
             <a class="text-blue-400 hover:underline" href="${run.commitUrl}">Commit</a> ·
             <a class="text-blue-400 hover:underline" href="${run.runUrl}">CI Run</a> ·
             <a class="text-blue-400 hover:underline" href="index.html">Back to Dashboard</a>
