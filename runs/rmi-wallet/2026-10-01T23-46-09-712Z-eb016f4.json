@@ -1,0 +1,89 @@
+{
+  "repo": "rmi-wallet",
+  "platform": "ios",
+  "branch": "199/merge",
+  "sha": "eb016f4d715b26c201c2543400e6d6cab4402157",
+  "shortSha": "eb016f4",
+  "commitUrl": "https://github.com/m1global/rmi-wallet/commit/eb016f4d715b26c201c2543400e6d6cab4402157",
+  "runUrl": "https://github.com/m1global/rmi-wallet/actions/runs/36938366305",
+  "timestamp": "2026-10-01T23:46:09.712Z",
+  "fileSafeId": "2026-10-01T23-46-09-712Z-eb016f4",
+  "totalFlows": 12,
+  "passed": 10,
+  "failed": 2,
+  "totalDurationSeconds": 951.6049999999999,
+  "flows": [
+    {
+      "name": "critical-path",
+      "durationSeconds": 421.971,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "accept-invite-decline",
+      "durationSeconds": 44.854,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "pay-deep-link-add-contact",
+      "durationSeconds": 47.235,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "pay-deep-link-happy-path",
+      "durationSeconds": 63.072,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "pay-deep-link-self",
+      "durationSeconds": 38.502,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "pay-deep-link-unknown-recipient",
+      "durationSeconds": 50.185,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "send-insufficient-funds",
+      "durationSeconds": 96.545,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "send",
+      "durationSeconds": 91.521,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "swap-insufficient-funds",
+      "durationSeconds": 37.523,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "swap",
+      "durationSeconds": 60.197,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "employee-invite-invalid-link",
+      "durationSeconds": 0,
+      "status": "missing",
+      "failureMessage": "No result produced for this flow — the CI step likely crashed or was interrupted before it ran."
+    },
+    {
+      "name": "employee-invite-unknown",
+      "durationSeconds": 0,
+      "status": "missing",
+      "failureMessage": "No result produced for this flow — the CI step likely crashed or was interrupted before it ran."
+    }
+  ]
+}
