@@ -1,0 +1,143 @@
+{
+  "repo": "rmi-merchants",
+  "platform": "android",
+  "branch": "93/merge",
+  "sha": "73d6217c58f256b5fcd7be3e76007d2981951884",
+  "shortSha": "73d6217",
+  "commitUrl": "https://github.com/m1global/rmi-merchant/commit/73d6217c58f256b5fcd7be3e76007d2981951884",
+  "runUrl": "https://github.com/m1global/rmi-merchant/actions/runs/36914071602",
+  "timestamp": "2026-10-01T20:07:54.167Z",
+  "fileSafeId": "2026-10-01T20-07-54-167Z-73d6217",
+  "totalFlows": 21,
+  "passed": 5,
+  "failed": 16,
+  "totalDurationSeconds": 1365.989,
+  "flows": [
+    {
+      "name": "start-and-end-session",
+      "durationSeconds": 183.057,
+      "status": "failed",
+      "failureMessage": "Assertion is false: id: operator-selector-add-operator-button is visible"
+    },
+    {
+      "name": "invalid-amount",
+      "durationSeconds": 102.963,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "complete-checkout",
+      "durationSeconds": 49.069,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "critical-path",
+      "durationSeconds": 178.635,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "generate-qr",
+      "durationSeconds": 95.02,
+      "status": "failed",
+      "failureMessage": "Assertion is false: id: invoice-generate-qr-button is visible"
+    },
+    {
+      "name": "invalid-amount",
+      "durationSeconds": 101.661,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "save-draft-then-send",
+      "durationSeconds": 96.486,
+      "status": "failed",
+      "failureMessage": "Assertion is false: id: invoice-bill-to-trigger is visible"
+    },
+    {
+      "name": "send-to-user",
+      "durationSeconds": 99.624,
+      "status": "failed",
+      "failureMessage": "Assertion is false: id: invoice-bill-to-trigger is visible"
+    },
+    {
+      "name": "tab-lock-negative-permission",
+      "durationSeconds": 183.736,
+      "status": "failed",
+      "failureMessage": "Assertion is false: id: operator-selector-add-operator-button is visible"
+    },
+    {
+      "name": "wrong-pin-then-correct",
+      "durationSeconds": 179.847,
+      "status": "failed",
+      "failureMessage": "Assertion is false: id: operator-selector-add-operator-button is visible"
+    },
+    {
+      "name": "register",
+      "durationSeconds": 95.891,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "cashier",
+      "durationSeconds": 0,
+      "status": "failed",
+      "failureMessage": "No result produced for this flow — the CI step likely crashed or was interrupted before it ran."
+    },
+    {
+      "name": "register-bodega",
+      "durationSeconds": 0,
+      "status": "failed",
+      "failureMessage": "No result produced for this flow — the CI step likely crashed or was interrupted before it ran."
+    },
+    {
+      "name": "checkout",
+      "durationSeconds": 0,
+      "status": "failed",
+      "failureMessage": "No result produced for this flow — the CI step likely crashed or was interrupted before it ran."
+    },
+    {
+      "name": "invoice-generate-qr",
+      "durationSeconds": 0,
+      "status": "failed",
+      "failureMessage": "No result produced for this flow — the CI step likely crashed or was interrupted before it ran."
+    },
+    {
+      "name": "invoice-send-to-user",
+      "durationSeconds": 0,
+      "status": "failed",
+      "failureMessage": "No result produced for this flow — the CI step likely crashed or was interrupted before it ran."
+    },
+    {
+      "name": "invoice-save-draft-then-send",
+      "durationSeconds": 0,
+      "status": "failed",
+      "failureMessage": "No result produced for this flow — the CI step likely crashed or was interrupted before it ran."
+    },
+    {
+      "name": "checkout-invalid-amount",
+      "durationSeconds": 0,
+      "status": "failed",
+      "failureMessage": "No result produced for this flow — the CI step likely crashed or was interrupted before it ran."
+    },
+    {
+      "name": "operator-wrong-pin",
+      "durationSeconds": 0,
+      "status": "failed",
+      "failureMessage": "No result produced for this flow — the CI step likely crashed or was interrupted before it ran."
+    },
+    {
+      "name": "operator-tab-lock",
+      "durationSeconds": 0,
+      "status": "failed",
+      "failureMessage": "No result produced for this flow — the CI step likely crashed or was interrupted before it ran."
+    },
+    {
+      "name": "invoice-invalid-amount",
+      "durationSeconds": 0,
+      "status": "failed",
+      "failureMessage": "No result produced for this flow — the CI step likely crashed or was interrupted before it ran."
+    }
+  ]
+}
