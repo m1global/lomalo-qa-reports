@@ -1,0 +1,91 @@
+{
+  "repo": "rmi-wallet",
+  "platform": "ios",
+  "branch": "199/merge",
+  "sha": "c2cfc57dddb1e630c07646d6b7cf08583c1ddf32",
+  "shortSha": "c2cfc57",
+  "commitUrl": "https://github.com/m1global/rmi-wallet/commit/c2cfc57dddb1e630c07646d6b7cf08583c1ddf32",
+  "runUrl": "https://github.com/m1global/rmi-wallet/actions/runs/37057682278",
+  "timestamp": "2026-10-02T20:49:56.915Z",
+  "fileSafeId": "2026-10-02T20-49-56-915Z-c2cfc57",
+  "runKey": "37057682278-1",
+  "status": "failed",
+  "totalFlows": 12,
+  "passed": 11,
+  "failed": 1,
+  "totalDurationSeconds": 789.5139999999999,
+  "flows": [
+    {
+      "name": "critical-path",
+      "durationSeconds": 320.37,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "accept-invite-decline",
+      "durationSeconds": 28.65,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "accept-invite-invalid-link",
+      "durationSeconds": 26.827,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "accept-invite-unknown-invitation",
+      "durationSeconds": 29.983,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "pay-deep-link-add-contact",
+      "durationSeconds": 31.587,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "pay-deep-link-happy-path",
+      "durationSeconds": 86.089,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "pay-deep-link-self",
+      "durationSeconds": 27.048,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "pay-deep-link-unknown-recipient",
+      "durationSeconds": 27.021,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "send-insufficient-funds",
+      "durationSeconds": 85.481,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "send",
+      "durationSeconds": 24.617,
+      "status": "failed",
+      "failureMessage": "Element not found: Id matching regex: quick-actions-transfer"
+    },
+    {
+      "name": "swap-insufficient-funds",
+      "durationSeconds": 43.873,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "swap",
+      "durationSeconds": 57.968,
+      "status": "passed",
+      "failureMessage": null
+    }
+  ]
+}
