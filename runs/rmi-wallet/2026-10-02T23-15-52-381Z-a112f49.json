@@ -1,0 +1,91 @@
+{
+  "repo": "rmi-wallet",
+  "platform": "ios",
+  "branch": "199/merge",
+  "sha": "a112f49b3647172a616b62ae709afb7ce94442c6",
+  "shortSha": "a112f49",
+  "commitUrl": "https://github.com/m1global/rmi-wallet/commit/a112f49b3647172a616b62ae709afb7ce94442c6",
+  "runUrl": "https://github.com/m1global/rmi-wallet/actions/runs/37074281119",
+  "timestamp": "2026-10-02T22:47:03.825Z",
+  "fileSafeId": "2026-10-02T23-15-52-381Z-a112f49",
+  "runKey": "37074281119-1",
+  "status": "failed",
+  "totalFlows": 12,
+  "passed": 0,
+  "failed": 12,
+  "totalDurationSeconds": 154.758,
+  "flows": [
+    {
+      "name": "critical-path",
+      "durationSeconds": 154.758,
+      "status": "failed",
+      "failureMessage": "Element not found: Id matching regex: send-link-button"
+    },
+    {
+      "name": "swap",
+      "durationSeconds": 0,
+      "status": "missing",
+      "failureMessage": "No result produced for this flow — it was skipped, or the CI step crashed or was interrupted before it ran."
+    },
+    {
+      "name": "swap-insufficient-funds",
+      "durationSeconds": 0,
+      "status": "missing",
+      "failureMessage": "No result produced for this flow — it was skipped, or the CI step crashed or was interrupted before it ran."
+    },
+    {
+      "name": "send",
+      "durationSeconds": 0,
+      "status": "missing",
+      "failureMessage": "No result produced for this flow — it was skipped, or the CI step crashed or was interrupted before it ran."
+    },
+    {
+      "name": "send-insufficient-funds",
+      "durationSeconds": 0,
+      "status": "missing",
+      "failureMessage": "No result produced for this flow — it was skipped, or the CI step crashed or was interrupted before it ran."
+    },
+    {
+      "name": "qr-happy-path",
+      "durationSeconds": 0,
+      "status": "missing",
+      "failureMessage": "No result produced for this flow — it was skipped, or the CI step crashed or was interrupted before it ran."
+    },
+    {
+      "name": "qr-add-contact",
+      "durationSeconds": 0,
+      "status": "missing",
+      "failureMessage": "No result produced for this flow — it was skipped, or the CI step crashed or was interrupted before it ran."
+    },
+    {
+      "name": "qr-self",
+      "durationSeconds": 0,
+      "status": "missing",
+      "failureMessage": "No result produced for this flow — it was skipped, or the CI step crashed or was interrupted before it ran."
+    },
+    {
+      "name": "qr-unknown-recipient",
+      "durationSeconds": 0,
+      "status": "missing",
+      "failureMessage": "No result produced for this flow — it was skipped, or the CI step crashed or was interrupted before it ran."
+    },
+    {
+      "name": "employee-invite-decline",
+      "durationSeconds": 0,
+      "status": "missing",
+      "failureMessage": "No result produced for this flow — it was skipped, or the CI step crashed or was interrupted before it ran."
+    },
+    {
+      "name": "employee-invite-invalid-link",
+      "durationSeconds": 0,
+      "status": "missing",
+      "failureMessage": "No result produced for this flow — it was skipped, or the CI step crashed or was interrupted before it ran."
+    },
+    {
+      "name": "employee-invite-unknown",
+      "durationSeconds": 0,
+      "status": "missing",
+      "failureMessage": "No result produced for this flow — it was skipped, or the CI step crashed or was interrupted before it ran."
+    }
+  ]
+}
