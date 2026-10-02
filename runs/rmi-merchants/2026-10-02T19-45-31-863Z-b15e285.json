@@ -1,0 +1,59 @@
+{
+  "repo": "rmi-merchants",
+  "platform": "ios",
+  "branch": "93/merge",
+  "sha": "b15e285d38f15992be6cd427274e9122cecf9f3a",
+  "shortSha": "b15e285",
+  "commitUrl": "https://github.com/m1global/rmi-merchant/commit/b15e285d38f15992be6cd427274e9122cecf9f3a",
+  "runUrl": "https://github.com/m1global/rmi-merchant/actions/runs/37051376623",
+  "timestamp": "2026-10-02T19:45:31.863Z",
+  "fileSafeId": "2026-10-02T19-45-31-863Z-b15e285",
+  "totalFlows": 7,
+  "passed": 6,
+  "failed": 1,
+  "totalDurationSeconds": 982.1400000000001,
+  "flows": [
+    {
+      "name": "start-and-end-session",
+      "durationSeconds": 165.452,
+      "status": "failed",
+      "failureMessage": "Assertion is false: \"Register3639551\" is visible"
+    },
+    {
+      "name": "complete-checkout",
+      "durationSeconds": 61.157,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "critical-path",
+      "durationSeconds": 335.571,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "generate-qr",
+      "durationSeconds": 65.553,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "save-draft-then-send",
+      "durationSeconds": 135.987,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "send-to-user",
+      "durationSeconds": 71.855,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "register",
+      "durationSeconds": 146.565,
+      "status": "passed",
+      "failureMessage": null
+    }
+  ]
+}
