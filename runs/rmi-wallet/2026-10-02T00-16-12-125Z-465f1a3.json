@@ -1,0 +1,89 @@
+{
+  "repo": "rmi-wallet",
+  "platform": "ios",
+  "branch": "199/merge",
+  "sha": "465f1a3364787f9a57c311c86bb4409b573bf3a7",
+  "shortSha": "465f1a3",
+  "commitUrl": "https://github.com/m1global/rmi-wallet/commit/465f1a3364787f9a57c311c86bb4409b573bf3a7",
+  "runUrl": "https://github.com/m1global/rmi-wallet/actions/runs/36942807384",
+  "timestamp": "2026-10-02T00:16:12.125Z",
+  "fileSafeId": "2026-10-02T00-16-12-125Z-465f1a3",
+  "totalFlows": 12,
+  "passed": 11,
+  "failed": 1,
+  "totalDurationSeconds": 547.3220000000001,
+  "flows": [
+    {
+      "name": "critical-path",
+      "durationSeconds": 236.577,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "accept-invite-decline",
+      "durationSeconds": 21.275,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "accept-invite-invalid-link",
+      "durationSeconds": 19.157,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "accept-invite-unknown-invitation",
+      "durationSeconds": 20.148,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "pay-deep-link-add-contact",
+      "durationSeconds": 20.913,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "pay-deep-link-happy-path",
+      "durationSeconds": 35.355,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "pay-deep-link-self",
+      "durationSeconds": 22.038,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "pay-deep-link-unknown-recipient",
+      "durationSeconds": 26.067,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "send-insufficient-funds",
+      "durationSeconds": 45.831,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "send",
+      "durationSeconds": 52.076,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "swap-insufficient-funds",
+      "durationSeconds": 7.916,
+      "status": "failed",
+      "failureMessage": "Assertion is false: id: save-card-swap is visible"
+    },
+    {
+      "name": "swap",
+      "durationSeconds": 39.969,
+      "status": "passed",
+      "failureMessage": null
+    }
+  ]
+}
