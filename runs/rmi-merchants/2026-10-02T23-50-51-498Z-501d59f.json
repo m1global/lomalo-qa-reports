@@ -1,0 +1,67 @@
+{
+  "repo": "rmi-merchants",
+  "platform": "ios",
+  "branch": "93/merge",
+  "sha": "501d59f521685c96b6257590ca4c88087e9e8cb1",
+  "shortSha": "501d59f",
+  "commitUrl": "https://github.com/m1global/rmi-merchant/commit/501d59f521685c96b6257590ca4c88087e9e8cb1",
+  "runUrl": "https://github.com/m1global/rmi-merchant/actions/runs/37076297792",
+  "timestamp": "2026-10-02T23:11:01.675Z",
+  "fileSafeId": "2026-10-02T23-50-51-498Z-501d59f",
+  "runKey": "37076297792-1",
+  "status": "failed",
+  "totalFlows": 8,
+  "passed": 6,
+  "failed": 2,
+  "totalDurationSeconds": 1039.799,
+  "flows": [
+    {
+      "name": "complete-checkout",
+      "durationSeconds": 54.255,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "critical-path",
+      "durationSeconds": 264.762,
+      "status": "failed",
+      "failureMessage": "Element not found: Id matching regex: send-link-button"
+    },
+    {
+      "name": "generate-qr",
+      "durationSeconds": 68.126,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "save-draft-then-send",
+      "durationSeconds": 129.674,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "send-to-user",
+      "durationSeconds": 72.253,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "second-wallet-same-org-pin",
+      "durationSeconds": 298.676,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "register",
+      "durationSeconds": 152.053,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "cashier",
+      "durationSeconds": 0,
+      "status": "missing",
+      "failureMessage": "No result produced for this flow — it was skipped, or the CI step crashed or was interrupted before it ran."
+    }
+  ]
+}
