@@ -1,0 +1,91 @@
+{
+  "repo": "rmi-merchants",
+  "platform": "android",
+  "branch": "93/merge",
+  "sha": "501d59f521685c96b6257590ca4c88087e9e8cb1",
+  "shortSha": "501d59f",
+  "commitUrl": "https://github.com/m1global/rmi-merchant/commit/501d59f521685c96b6257590ca4c88087e9e8cb1",
+  "runUrl": "https://github.com/m1global/rmi-merchant/actions/runs/37076297790",
+  "timestamp": "2026-10-02T23:11:50.391Z",
+  "fileSafeId": "2026-10-02T23-52-30-355Z-501d59f",
+  "runKey": "37076297790-1",
+  "status": "failed",
+  "totalFlows": 12,
+  "passed": 9,
+  "failed": 3,
+  "totalDurationSeconds": 1398.8980000000001,
+  "flows": [
+    {
+      "name": "start-and-end-session",
+      "durationSeconds": 296.92,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "checkout-invalid-amount",
+      "durationSeconds": 190.275,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "complete-checkout",
+      "durationSeconds": 46.747,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "critical-path",
+      "durationSeconds": 200.171,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "generate-qr",
+      "durationSeconds": 49.706,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "save-draft-then-send",
+      "durationSeconds": 106.348,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "send-to-user",
+      "durationSeconds": 68.736,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "second-wallet-same-org-pin",
+      "durationSeconds": 258.739,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "register",
+      "durationSeconds": 181.256,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "operator-wrong-pin",
+      "durationSeconds": 0,
+      "status": "missing",
+      "failureMessage": "No result produced for this flow — it was skipped, or the CI step crashed or was interrupted before it ran."
+    },
+    {
+      "name": "operator-tab-lock",
+      "durationSeconds": 0,
+      "status": "missing",
+      "failureMessage": "No result produced for this flow — it was skipped, or the CI step crashed or was interrupted before it ran."
+    },
+    {
+      "name": "invoice-invalid-amount",
+      "durationSeconds": 0,
+      "status": "missing",
+      "failureMessage": "No result produced for this flow — it was skipped, or the CI step crashed or was interrupted before it ran."
+    }
+  ]
+}
