@@ -1,0 +1,67 @@
+{
+  "repo": "rmi-merchants",
+  "platform": "ios",
+  "branch": "93/merge",
+  "sha": "ad302623608a36705aab371a312d730277256ec7",
+  "shortSha": "ad30262",
+  "commitUrl": "https://github.com/m1global/rmi-merchant/commit/ad302623608a36705aab371a312d730277256ec7",
+  "runUrl": "https://github.com/m1global/rmi-merchant/actions/runs/37066706929",
+  "timestamp": "2026-10-02T21:25:25.710Z",
+  "fileSafeId": "2026-10-02T22-10-46-920Z-ad30262",
+  "runKey": "37066706929-1",
+  "status": "failed",
+  "totalFlows": 8,
+  "passed": 7,
+  "failed": 1,
+  "totalDurationSeconds": 1301.9479999999999,
+  "flows": [
+    {
+      "name": "start-and-end-session",
+      "durationSeconds": 320.287,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "complete-checkout",
+      "durationSeconds": 51.618,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "critical-path",
+      "durationSeconds": 286.738,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "generate-qr",
+      "durationSeconds": 66.553,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "send-to-user",
+      "durationSeconds": 83.818,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "second-wallet-same-org-pin",
+      "durationSeconds": 336.106,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "register",
+      "durationSeconds": 156.828,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "invoice-save-draft-then-send",
+      "durationSeconds": 0,
+      "status": "missing",
+      "failureMessage": "No result produced for this flow — it was skipped, or the CI step crashed or was interrupted before it ran."
+    }
+  ]
+}
