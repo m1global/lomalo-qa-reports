@@ -1,0 +1,97 @@
+{
+  "repo": "rmi-wallet",
+  "platform": "android",
+  "branch": "199/merge",
+  "sha": "5d17241c9e7478c0111fbc1f72f21532151b8a32",
+  "shortSha": "5d17241",
+  "commitUrl": "https://github.com/m1global/rmi-wallet/commit/5d17241c9e7478c0111fbc1f72f21532151b8a32",
+  "runUrl": "https://github.com/m1global/rmi-wallet/actions/runs/37059730377",
+  "timestamp": "2026-10-02T20:20:42.195Z",
+  "fileSafeId": "2026-10-02T20-40-44-661Z-5d17241",
+  "runKey": "37059730377-1",
+  "status": "failed",
+  "totalFlows": 13,
+  "passed": 2,
+  "failed": 11,
+  "totalDurationSeconds": 543.268,
+  "flows": [
+    {
+      "name": "critical-path",
+      "durationSeconds": 240.761,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "accept-invite-decline",
+      "durationSeconds": 17.347,
+      "status": "failed",
+      "failureMessage": "Assertion is false: id: home-screen is visible"
+    },
+    {
+      "name": "accept-invite-invalid-link",
+      "durationSeconds": 17.278,
+      "status": "failed",
+      "failureMessage": "Assertion is false: id: home-screen is visible"
+    },
+    {
+      "name": "accept-invite-unknown-invitation",
+      "durationSeconds": 17.402,
+      "status": "failed",
+      "failureMessage": "Assertion is false: id: home-screen is visible"
+    },
+    {
+      "name": "pay-deep-link-add-contact",
+      "durationSeconds": 17.345,
+      "status": "failed",
+      "failureMessage": "Assertion is false: id: home-screen is visible"
+    },
+    {
+      "name": "pay-deep-link-happy-path",
+      "durationSeconds": 17.29,
+      "status": "failed",
+      "failureMessage": "Assertion is false: id: home-screen is visible"
+    },
+    {
+      "name": "pay-deep-link-self",
+      "durationSeconds": 17.31,
+      "status": "failed",
+      "failureMessage": "Assertion is false: id: home-screen is visible"
+    },
+    {
+      "name": "pay-deep-link-unknown-recipient",
+      "durationSeconds": 17.327,
+      "status": "failed",
+      "failureMessage": "Assertion is false: id: home-screen is visible"
+    },
+    {
+      "name": "send-insufficient-funds",
+      "durationSeconds": 21.151,
+      "status": "failed",
+      "failureMessage": "Assertion is false: id: home-screen is visible"
+    },
+    {
+      "name": "send",
+      "durationSeconds": 21.153,
+      "status": "failed",
+      "failureMessage": "Assertion is false: id: home-screen is visible"
+    },
+    {
+      "name": "swap-insufficient-funds",
+      "durationSeconds": 16.265,
+      "status": "failed",
+      "failureMessage": "Assertion is false: id: home-balance-stack-save is visible"
+    },
+    {
+      "name": "swap-leave-and-recover",
+      "durationSeconds": 63.159,
+      "status": "failed",
+      "failureMessage": "Assertion is false: id: home-screen is visible"
+    },
+    {
+      "name": "swap",
+      "durationSeconds": 59.48,
+      "status": "passed",
+      "failureMessage": null
+    }
+  ]
+}
