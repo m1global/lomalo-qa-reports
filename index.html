@@ -149,7 +149,12 @@
       return fetch("data/index.json", { cache: "no-store" })
         .then((res) => res.json())
         .then((data) => {
-          allRuns = Array.isArray(data) ? data : [];
+          // Sort explicitly by timestamp (when the run started) rather than
+          // trusting index.json's own array order — a client-side safety
+          // net independent of how the publisher script writes entries.
+          allRuns = Array.isArray(data)
+            ? [...data].sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp))
+            : [];
           render();
         })
         .catch(() => {
