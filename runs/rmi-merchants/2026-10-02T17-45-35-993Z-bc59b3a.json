@@ -1,0 +1,83 @@
+{
+  "repo": "rmi-merchants",
+  "platform": "android",
+  "branch": "93/merge",
+  "sha": "bc59b3af0305b01c53ff27ff9aa08b277dfbc6e1",
+  "shortSha": "bc59b3a",
+  "commitUrl": "https://github.com/m1global/rmi-merchant/commit/bc59b3af0305b01c53ff27ff9aa08b277dfbc6e1",
+  "runUrl": "https://github.com/m1global/rmi-merchant/actions/runs/37040663684",
+  "timestamp": "2026-10-02T17:45:35.993Z",
+  "fileSafeId": "2026-10-02T17-45-35-993Z-bc59b3a",
+  "totalFlows": 11,
+  "passed": 2,
+  "failed": 9,
+  "totalDurationSeconds": 356.93600000000004,
+  "flows": [
+    {
+      "name": "start-and-end-session",
+      "durationSeconds": 63.095,
+      "status": "failed",
+      "failureMessage": "Assertion is false: id: sign-up-link is visible"
+    },
+    {
+      "name": "critical-path",
+      "durationSeconds": 185.733,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "register",
+      "durationSeconds": 108.108,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "checkout",
+      "durationSeconds": 0,
+      "status": "missing",
+      "failureMessage": "No result produced for this flow — the CI step likely crashed or was interrupted before it ran."
+    },
+    {
+      "name": "invoice-generate-qr",
+      "durationSeconds": 0,
+      "status": "missing",
+      "failureMessage": "No result produced for this flow — the CI step likely crashed or was interrupted before it ran."
+    },
+    {
+      "name": "invoice-send-to-user",
+      "durationSeconds": 0,
+      "status": "missing",
+      "failureMessage": "No result produced for this flow — the CI step likely crashed or was interrupted before it ran."
+    },
+    {
+      "name": "invoice-save-draft-then-send",
+      "durationSeconds": 0,
+      "status": "missing",
+      "failureMessage": "No result produced for this flow — the CI step likely crashed or was interrupted before it ran."
+    },
+    {
+      "name": "checkout-invalid-amount",
+      "durationSeconds": 0,
+      "status": "missing",
+      "failureMessage": "No result produced for this flow — the CI step likely crashed or was interrupted before it ran."
+    },
+    {
+      "name": "operator-wrong-pin",
+      "durationSeconds": 0,
+      "status": "missing",
+      "failureMessage": "No result produced for this flow — the CI step likely crashed or was interrupted before it ran."
+    },
+    {
+      "name": "operator-tab-lock",
+      "durationSeconds": 0,
+      "status": "missing",
+      "failureMessage": "No result produced for this flow — the CI step likely crashed or was interrupted before it ran."
+    },
+    {
+      "name": "invoice-invalid-amount",
+      "durationSeconds": 0,
+      "status": "missing",
+      "failureMessage": "No result produced for this flow — the CI step likely crashed or was interrupted before it ran."
+    }
+  ]
+}
