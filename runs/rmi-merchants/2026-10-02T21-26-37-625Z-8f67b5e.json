@@ -1,0 +1,67 @@
+{
+  "repo": "rmi-merchants",
+  "platform": "ios",
+  "branch": "93/merge",
+  "sha": "8f67b5e6909494b1d871627fc0df4dd4955cfd1a",
+  "shortSha": "8f67b5e",
+  "commitUrl": "https://github.com/m1global/rmi-merchant/commit/8f67b5e6909494b1d871627fc0df4dd4955cfd1a",
+  "runUrl": "https://github.com/m1global/rmi-merchant/actions/runs/37065298307",
+  "timestamp": "2026-10-02T21:11:27.034Z",
+  "fileSafeId": "2026-10-02T21-26-37-625Z-8f67b5e",
+  "runKey": "37065298307-1",
+  "status": "failed",
+  "totalFlows": 8,
+  "passed": 0,
+  "failed": 8,
+  "totalDurationSeconds": 0,
+  "flows": [
+    {
+      "name": "critical-path",
+      "durationSeconds": 0,
+      "status": "missing",
+      "failureMessage": "No result produced for this flow — it was skipped, or the CI step crashed or was interrupted before it ran."
+    },
+    {
+      "name": "cashier",
+      "durationSeconds": 0,
+      "status": "missing",
+      "failureMessage": "No result produced for this flow — it was skipped, or the CI step crashed or was interrupted before it ran."
+    },
+    {
+      "name": "operator-second-wallet-same-org-pin",
+      "durationSeconds": 0,
+      "status": "missing",
+      "failureMessage": "No result produced for this flow — it was skipped, or the CI step crashed or was interrupted before it ran."
+    },
+    {
+      "name": "register-bodega",
+      "durationSeconds": 0,
+      "status": "missing",
+      "failureMessage": "No result produced for this flow — it was skipped, or the CI step crashed or was interrupted before it ran."
+    },
+    {
+      "name": "checkout",
+      "durationSeconds": 0,
+      "status": "missing",
+      "failureMessage": "No result produced for this flow — it was skipped, or the CI step crashed or was interrupted before it ran."
+    },
+    {
+      "name": "invoice-generate-qr",
+      "durationSeconds": 0,
+      "status": "missing",
+      "failureMessage": "No result produced for this flow — it was skipped, or the CI step crashed or was interrupted before it ran."
+    },
+    {
+      "name": "invoice-send-to-user",
+      "durationSeconds": 0,
+      "status": "missing",
+      "failureMessage": "No result produced for this flow — it was skipped, or the CI step crashed or was interrupted before it ran."
+    },
+    {
+      "name": "invoice-save-draft-then-send",
+      "durationSeconds": 0,
+      "status": "missing",
+      "failureMessage": "No result produced for this flow — it was skipped, or the CI step crashed or was interrupted before it ran."
+    }
+  ]
+}
