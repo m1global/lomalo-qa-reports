@@ -1,0 +1,91 @@
+{
+  "repo": "rmi-merchants",
+  "platform": "android",
+  "branch": "93/merge",
+  "sha": "e3ab9c6040eb2d2cfd8b7abc456d0e18421264db",
+  "shortSha": "e3ab9c6",
+  "commitUrl": "https://github.com/m1global/rmi-merchant/commit/e3ab9c6040eb2d2cfd8b7abc456d0e18421264db",
+  "runUrl": "https://github.com/m1global/rmi-merchant/actions/runs/37057660522",
+  "timestamp": "2026-10-02T20:49:10.586Z",
+  "fileSafeId": "2026-10-02T20-49-10-586Z-e3ab9c6",
+  "runKey": "37057660522-1",
+  "status": "failed",
+  "totalFlows": 12,
+  "passed": 3,
+  "failed": 9,
+  "totalDurationSeconds": 1666.2279999999998,
+  "flows": [
+    {
+      "name": "start-and-end-session",
+      "durationSeconds": 176.328,
+      "status": "failed",
+      "failureMessage": "Assertion is false: id: operator-selector-add-operator-button is visible"
+    },
+    {
+      "name": "checkout-invalid-amount",
+      "durationSeconds": 140.173,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "critical-path",
+      "durationSeconds": 210.972,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "invoice-invalid-amount",
+      "durationSeconds": 135.478,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "second-wallet-same-org-pin",
+      "durationSeconds": 179.733,
+      "status": "failed",
+      "failureMessage": "Assertion is false: id: operator-selector-add-operator-button is visible"
+    },
+    {
+      "name": "tab-lock-negative-permission",
+      "durationSeconds": 486.79,
+      "status": "failed",
+      "failureMessage": "Assertion is false: id: operator-selector-add-operator-button is visible"
+    },
+    {
+      "name": "wrong-pin-then-correct",
+      "durationSeconds": 175.337,
+      "status": "failed",
+      "failureMessage": "Assertion is false: id: operator-selector-add-operator-button is visible"
+    },
+    {
+      "name": "register",
+      "durationSeconds": 161.417,
+      "status": "failed",
+      "failureMessage": "Assertion is false: id: home-screen is visible"
+    },
+    {
+      "name": "checkout",
+      "durationSeconds": 0,
+      "status": "missing",
+      "failureMessage": "No result produced for this flow — it was skipped, or the CI step crashed or was interrupted before it ran."
+    },
+    {
+      "name": "invoice-generate-qr",
+      "durationSeconds": 0,
+      "status": "missing",
+      "failureMessage": "No result produced for this flow — it was skipped, or the CI step crashed or was interrupted before it ran."
+    },
+    {
+      "name": "invoice-send-to-user",
+      "durationSeconds": 0,
+      "status": "missing",
+      "failureMessage": "No result produced for this flow — it was skipped, or the CI step crashed or was interrupted before it ran."
+    },
+    {
+      "name": "invoice-save-draft-then-send",
+      "durationSeconds": 0,
+      "status": "missing",
+      "failureMessage": "No result produced for this flow — it was skipped, or the CI step crashed or was interrupted before it ran."
+    }
+  ]
+}
