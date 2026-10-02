@@ -1,0 +1,89 @@
+{
+  "repo": "rmi-wallet",
+  "platform": "ios",
+  "branch": "199/merge",
+  "sha": "48d3a6de53b0dae1047dde9ce6560205a2c7d96c",
+  "shortSha": "48d3a6d",
+  "commitUrl": "https://github.com/m1global/rmi-wallet/commit/48d3a6de53b0dae1047dde9ce6560205a2c7d96c",
+  "runUrl": "https://github.com/m1global/rmi-wallet/actions/runs/37055144469",
+  "timestamp": "2026-10-02T20:12:41.879Z",
+  "fileSafeId": "2026-10-02T20-12-41-879Z-48d3a6d",
+  "totalFlows": 12,
+  "passed": 12,
+  "failed": 0,
+  "totalDurationSeconds": 757.6250000000001,
+  "flows": [
+    {
+      "name": "critical-path",
+      "durationSeconds": 278.222,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "accept-invite-decline",
+      "durationSeconds": 24.065,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "accept-invite-invalid-link",
+      "durationSeconds": 23.909,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "accept-invite-unknown-invitation",
+      "durationSeconds": 28.28,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "pay-deep-link-add-contact",
+      "durationSeconds": 27.085,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "pay-deep-link-happy-path",
+      "durationSeconds": 93.957,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "pay-deep-link-self",
+      "durationSeconds": 37.093,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "pay-deep-link-unknown-recipient",
+      "durationSeconds": 25.177,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "send-insufficient-funds",
+      "durationSeconds": 62.855,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "send",
+      "durationSeconds": 77.681,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "swap-insufficient-funds",
+      "durationSeconds": 30.613,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "swap",
+      "durationSeconds": 48.688,
+      "status": "passed",
+      "failureMessage": null
+    }
+  ]
+}
