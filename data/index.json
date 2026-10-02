@@ -1,5 +1,21 @@
 [
   {
+    "repo": "rmi-merchants",
+    "platform": "android",
+    "branch": "93/merge",
+    "sha": "431d01e4d4e80f75136f2c70c132bae8bb50f25b",
+    "shortSha": "431d01e",
+    "commitUrl": "https://github.com/m1global/rmi-merchant/commit/431d01e4d4e80f75136f2c70c132bae8bb50f25b",
+    "runUrl": "https://github.com/m1global/rmi-merchant/actions/runs/37055142715",
+    "timestamp": "2026-10-02T20:14:10.114Z",
+    "fileSafeId": "2026-10-02T20-14-10-114Z-431d01e",
+    "totalFlows": 11,
+    "passed": 5,
+    "failed": 6,
+    "totalDurationSeconds": 1361.58,
+    "detailPath": "detail.html?run=runs/rmi-merchants/2026-10-02T20-14-10-114Z-431d01e.json"
+  },
+  {
     "repo": "rmi-wallet",
     "platform": "ios",
     "branch": "199/merge",
