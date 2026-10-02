@@ -93,16 +93,29 @@
 
       tbody.innerHTML = rows
         .map((r) => {
-          const allPassed = r.failed === 0;
-          const badge = allPassed
-            ? `<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-md text-xs font-semibold bg-emerald-500/10 text-emerald-400 ring-1 ring-inset ring-emerald-500/20">PASS</span>`
-            : `<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-md text-xs font-semibold bg-red-500/10 text-red-400 ring-1 ring-inset ring-red-500/20">FAIL</span>`;
+          // `status` is absent on entries published before this field
+          // existed — fall back to the old failed-count inference so
+          // historical rows still render correctly.
+          const rowStatus = r.status ?? (r.failed === 0 ? "passed" : "failed");
+          const badge =
+            rowStatus === "pending"
+              ? `<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-semibold bg-blue-500/10 text-blue-400 ring-1 ring-inset ring-blue-500/20"><span class="w-1.5 h-1.5 rounded-full bg-blue-400 animate-pulse"></span>RUNNING</span>`
+              : rowStatus === "passed"
+                ? `<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-md text-xs font-semibold bg-emerald-500/10 text-emerald-400 ring-1 ring-inset ring-emerald-500/20">PASS</span>`
+                : `<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-md text-xs font-semibold bg-red-500/10 text-red-400 ring-1 ring-inset ring-red-500/20">FAIL</span>`;
           const detailLink = r.detailPath
             ? `<a class="text-blue-400 hover:text-blue-300 font-medium transition-colors" href="${r.detailPath}">Details</a>`
             : "";
           const commitLink = r.commitUrl
             ? `<a class="text-blue-400 hover:text-blue-300 transition-colors" href="${r.commitUrl}"><code class="bg-gray-800/80 px-1.5 py-0.5 rounded text-xs">${r.shortSha ?? ""}</code></a>`
             : `<code class="bg-gray-800/80 px-1.5 py-0.5 rounded text-xs">${r.shortSha ?? ""}</code>`;
+          const flowsCell =
+            rowStatus === "pending"
+              ? `<span class="text-gray-600">—${r.totalFlows ? ` / ${r.totalFlows}` : ""}</span>`
+              : `${r.passed}/${r.totalFlows}`;
+          const rowLink = rowStatus === "pending" && r.runUrl
+            ? `<a class="text-blue-400 hover:text-blue-300 font-medium transition-colors" href="${r.runUrl}">CI run</a>`
+            : detailLink;
           return `
             <tr class="hover:bg-gray-900/60 transition-colors">
               <td class="px-4 py-3.5">${badge}</td>
@@ -110,10 +123,10 @@
               <td class="px-4 py-3.5 text-gray-300">${platformLabel(r.platform) ?? "—"}</td>
               <td class="px-4 py-3.5 text-gray-300">${r.branch ?? "—"}</td>
               <td class="px-4 py-3.5">${commitLink}</td>
-              <td class="px-4 py-3.5 text-gray-300 tabular-nums">${r.passed}/${r.totalFlows}</td>
+              <td class="px-4 py-3.5 text-gray-300 tabular-nums">${flowsCell}</td>
               <td class="px-4 py-3.5 text-gray-400 tabular-nums">${formatDuration(r.totalDurationSeconds)}</td>
               <td class="px-4 py-3.5 text-gray-500">${formatWhen(r.timestamp)}</td>
-              <td class="px-4 py-3.5 text-right">${detailLink}</td>
+              <td class="px-4 py-3.5 text-right">${rowLink}</td>
             </tr>`;
         })
         .join("");
@@ -132,16 +145,39 @@
       render();
     });
 
-    fetch("data/index.json", { cache: "no-store" })
-      .then((res) => res.json())
-      .then((data) => {
-        allRuns = Array.isArray(data) ? data : [];
-        render();
-      })
-      .catch(() => {
-        allRuns = [];
-        render();
-      });
+    function loadData() {
+      return fetch("data/index.json", { cache: "no-store" })
+        .then((res) => res.json())
+        .then((data) => {
+          allRuns = Array.isArray(data) ? data : [];
+          render();
+        })
+        .catch(() => {
+          if (allRuns.length === 0) render();
+        });
+    }
+
+    // Only a RUNNING row ever needs a repaint after the first load — a
+    // page with none open just polls data/index.json for nothing. Stops
+    // entirely once every row has settled, and restarts the instant a new
+    // RUNNING row appears (a fresh push).
+    let pollTimer = null;
+    function hasPendingRows() {
+      return allRuns.some((r) => (r.status ?? (r.failed === 0 ? "passed" : "failed")) === "pending");
+    }
+    function pollWhilePending() {
+      if (pollTimer || !hasPendingRows()) return;
+      pollTimer = setInterval(() => {
+        loadData().then(() => {
+          if (!hasPendingRows()) {
+            clearInterval(pollTimer);
+            pollTimer = null;
+          }
+        });
+      }, 15000);
+    }
+
+    loadData().then(pollWhilePending);
   </script>
 </body>
 </html>
