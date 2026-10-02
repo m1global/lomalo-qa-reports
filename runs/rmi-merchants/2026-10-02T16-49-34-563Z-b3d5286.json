@@ -1,0 +1,59 @@
+{
+  "repo": "rmi-merchants",
+  "platform": "ios",
+  "branch": "93/merge",
+  "sha": "b3d52860ab7d1545bc05622142460a80936d0f08",
+  "shortSha": "b3d5286",
+  "commitUrl": "https://github.com/m1global/rmi-merchant/commit/b3d52860ab7d1545bc05622142460a80936d0f08",
+  "runUrl": "https://github.com/m1global/rmi-merchant/actions/runs/37033169379",
+  "timestamp": "2026-10-02T16:49:34.563Z",
+  "fileSafeId": "2026-10-02T16-49-34-563Z-b3d5286",
+  "totalFlows": 7,
+  "passed": 0,
+  "failed": 7,
+  "totalDurationSeconds": 554.766,
+  "flows": [
+    {
+      "name": "start-and-end-session",
+      "durationSeconds": 120.336,
+      "status": "failed",
+      "failureMessage": "Assertion is false: id: confirm-send-button is visible"
+    },
+    {
+      "name": "complete-checkout",
+      "durationSeconds": 65.371,
+      "status": "failed",
+      "failureMessage": "Assertion is false: id: home-screen is visible"
+    },
+    {
+      "name": "critical-path",
+      "durationSeconds": 126.752,
+      "status": "failed",
+      "failureMessage": "Assertion is false: \"GARCIA\" is visible"
+    },
+    {
+      "name": "generate-qr",
+      "durationSeconds": 65.497,
+      "status": "failed",
+      "failureMessage": "Assertion is false: id: home-screen is visible"
+    },
+    {
+      "name": "save-draft-then-send",
+      "durationSeconds": 57.26,
+      "status": "failed",
+      "failureMessage": "Assertion is false: id: home-screen is visible"
+    },
+    {
+      "name": "send-to-user",
+      "durationSeconds": 62.299,
+      "status": "failed",
+      "failureMessage": "Assertion is false: id: home-screen is visible"
+    },
+    {
+      "name": "register",
+      "durationSeconds": 57.251,
+      "status": "failed",
+      "failureMessage": "Assertion is false: id: demo-continue-button is visible"
+    }
+  ]
+}
