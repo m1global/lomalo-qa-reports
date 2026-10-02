@@ -1,0 +1,91 @@
+{
+  "repo": "rmi-merchants",
+  "platform": "android",
+  "branch": "93/merge",
+  "sha": "3b89e84bf4e941df297b84f193026cce06640f95",
+  "shortSha": "3b89e84",
+  "commitUrl": "https://github.com/m1global/rmi-merchant/commit/3b89e84bf4e941df297b84f193026cce06640f95",
+  "runUrl": "https://github.com/m1global/rmi-merchant/actions/runs/37059695238",
+  "timestamp": "2026-10-02T20:19:29.950Z",
+  "fileSafeId": "2026-10-02T20-59-38-490Z-3b89e84",
+  "runKey": "37059695238-1",
+  "status": "failed",
+  "totalFlows": 12,
+  "passed": 5,
+  "failed": 7,
+  "totalDurationSeconds": 1478.1929999999998,
+  "flows": [
+    {
+      "name": "start-and-end-session",
+      "durationSeconds": 168.095,
+      "status": "failed",
+      "failureMessage": "Assertion is false: id: operator-selector-add-operator-button is visible"
+    },
+    {
+      "name": "checkout-invalid-amount",
+      "durationSeconds": 134.681,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "complete-checkout",
+      "durationSeconds": 48.049,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "critical-path",
+      "durationSeconds": 201.007,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "generate-qr",
+      "durationSeconds": 54.977,
+      "status": "failed",
+      "failureMessage": "Assertion is false: \"2026-12-31\", id: invoice-due-date-e2e-input is visible"
+    },
+    {
+      "name": "invoice-invalid-amount",
+      "durationSeconds": 131.252,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "save-draft-then-send",
+      "durationSeconds": 54.308,
+      "status": "failed",
+      "failureMessage": "Assertion is false: \"2026-12-31\", id: invoice-due-date-e2e-input is visible"
+    },
+    {
+      "name": "send-to-user",
+      "durationSeconds": 55.564,
+      "status": "failed",
+      "failureMessage": "Assertion is false: \"2026-12-31\", id: invoice-due-date-e2e-input is visible"
+    },
+    {
+      "name": "second-wallet-same-org-pin",
+      "durationSeconds": 168.095,
+      "status": "failed",
+      "failureMessage": "Assertion is false: id: operator-selector-add-operator-button is visible"
+    },
+    {
+      "name": "tab-lock-negative-permission",
+      "durationSeconds": 171.342,
+      "status": "failed",
+      "failureMessage": "Assertion is false: id: operator-selector-add-operator-button is visible"
+    },
+    {
+      "name": "wrong-pin-then-correct",
+      "durationSeconds": 166.847,
+      "status": "failed",
+      "failureMessage": "Assertion is false: id: operator-selector-add-operator-button is visible"
+    },
+    {
+      "name": "register",
+      "durationSeconds": 123.976,
+      "status": "passed",
+      "failureMessage": null
+    }
+  ]
+}
