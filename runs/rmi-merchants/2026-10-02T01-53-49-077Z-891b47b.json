@@ -1,0 +1,59 @@
+{
+  "repo": "rmi-merchants",
+  "platform": "ios",
+  "branch": "93/merge",
+  "sha": "891b47b3698db34cd2add3df28cee8081b779d4c",
+  "shortSha": "891b47b",
+  "commitUrl": "https://github.com/m1global/rmi-merchant/commit/891b47b3698db34cd2add3df28cee8081b779d4c",
+  "runUrl": "https://github.com/m1global/rmi-merchant/actions/runs/36950306836",
+  "timestamp": "2026-10-02T01:53:49.077Z",
+  "fileSafeId": "2026-10-02T01-53-49-077Z-891b47b",
+  "totalFlows": 7,
+  "passed": 0,
+  "failed": 7,
+  "totalDurationSeconds": 649.877,
+  "flows": [
+    {
+      "name": "start-and-end-session",
+      "durationSeconds": 120.138,
+      "status": "failed",
+      "failureMessage": "Element not found: Id matching regex: enterprise-location-option-MH-MAJ"
+    },
+    {
+      "name": "complete-checkout",
+      "durationSeconds": 62.804,
+      "status": "failed",
+      "failureMessage": "Assertion is false: id: home-screen is visible"
+    },
+    {
+      "name": "critical-path",
+      "durationSeconds": 143.708,
+      "status": "failed",
+      "failureMessage": "Element not found: Id matching regex: enterprise-location-option-MH-MAJ"
+    },
+    {
+      "name": "generate-qr",
+      "durationSeconds": 67.822,
+      "status": "failed",
+      "failureMessage": "Assertion is false: id: home-screen is visible"
+    },
+    {
+      "name": "save-draft-then-send",
+      "durationSeconds": 72.223,
+      "status": "failed",
+      "failureMessage": "Assertion is false: id: home-screen is visible"
+    },
+    {
+      "name": "send-to-user",
+      "durationSeconds": 62.744,
+      "status": "failed",
+      "failureMessage": "Assertion is false: id: home-screen is visible"
+    },
+    {
+      "name": "register",
+      "durationSeconds": 120.438,
+      "status": "failed",
+      "failureMessage": "Element not found: Id matching regex: enterprise-location-option-MH-MAJ"
+    }
+  ]
+}
