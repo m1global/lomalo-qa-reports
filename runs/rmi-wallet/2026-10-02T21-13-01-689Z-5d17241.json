@@ -1,0 +1,91 @@
+{
+  "repo": "rmi-wallet",
+  "platform": "ios",
+  "branch": "199/merge",
+  "sha": "5d17241c9e7478c0111fbc1f72f21532151b8a32",
+  "shortSha": "5d17241",
+  "commitUrl": "https://github.com/m1global/rmi-wallet/commit/5d17241c9e7478c0111fbc1f72f21532151b8a32",
+  "runUrl": "https://github.com/m1global/rmi-wallet/actions/runs/37059730396",
+  "timestamp": "2026-10-02T20:18:56.340Z",
+  "fileSafeId": "2026-10-02T21-13-01-689Z-5d17241",
+  "runKey": "37059730396-1",
+  "status": "failed",
+  "totalFlows": 12,
+  "passed": 5,
+  "failed": 7,
+  "totalDurationSeconds": 904.2920000000001,
+  "flows": [
+    {
+      "name": "critical-path",
+      "durationSeconds": 306.91,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "accept-invite-decline",
+      "durationSeconds": 26.78,
+      "status": "failed",
+      "failureMessage": "Assertion is false: id: home-screen is visible"
+    },
+    {
+      "name": "accept-invite-invalid-link",
+      "durationSeconds": 32.324,
+      "status": "failed",
+      "failureMessage": "Assertion is false: id: home-screen is visible"
+    },
+    {
+      "name": "pay-deep-link-add-contact",
+      "durationSeconds": 53.679,
+      "status": "failed",
+      "failureMessage": "Assertion is false: id: home-screen is visible"
+    },
+    {
+      "name": "pay-deep-link-happy-path",
+      "durationSeconds": 55.679,
+      "status": "failed",
+      "failureMessage": "Assertion is false: \"Send Funds\" is visible"
+    },
+    {
+      "name": "pay-deep-link-self",
+      "durationSeconds": 35.672,
+      "status": "failed",
+      "failureMessage": "Assertion is false: id: home-screen is visible"
+    },
+    {
+      "name": "pay-deep-link-unknown-recipient",
+      "durationSeconds": 43.895,
+      "status": "failed",
+      "failureMessage": "Assertion is false: id: home-screen is visible"
+    },
+    {
+      "name": "send-insufficient-funds",
+      "durationSeconds": 153.134,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "send",
+      "durationSeconds": 70.863,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "swap-insufficient-funds",
+      "durationSeconds": 57.158,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "swap",
+      "durationSeconds": 68.198,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "employee-invite-unknown",
+      "durationSeconds": 0,
+      "status": "missing",
+      "failureMessage": "No result produced for this flow — it was skipped, or the CI step crashed or was interrupted before it ran."
+    }
+  ]
+}
