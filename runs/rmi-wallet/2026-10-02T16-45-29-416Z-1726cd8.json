@@ -1,0 +1,95 @@
+{
+  "repo": "rmi-wallet",
+  "platform": "android",
+  "branch": "199/merge",
+  "sha": "1726cd8baeef5d2361433f2dc1296a38b4bbdbeb",
+  "shortSha": "1726cd8",
+  "commitUrl": "https://github.com/m1global/rmi-wallet/commit/1726cd8baeef5d2361433f2dc1296a38b4bbdbeb",
+  "runUrl": "https://github.com/m1global/rmi-wallet/actions/runs/37033294946",
+  "timestamp": "2026-10-02T16:45:29.416Z",
+  "fileSafeId": "2026-10-02T16-45-29-416Z-1726cd8",
+  "totalFlows": 13,
+  "passed": 7,
+  "failed": 6,
+  "totalDurationSeconds": 536.4879999999999,
+  "flows": [
+    {
+      "name": "critical-path",
+      "durationSeconds": 248.79,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "accept-invite-decline",
+      "durationSeconds": 19.47,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "accept-invite-invalid-link",
+      "durationSeconds": 19.481,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "accept-invite-unknown-invitation",
+      "durationSeconds": 22.587,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "pay-deep-link-add-contact",
+      "durationSeconds": 20.597,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "pay-deep-link-happy-path",
+      "durationSeconds": 41.72,
+      "status": "failed",
+      "failureMessage": "Assertion is false: id: confirm-request-button is visible"
+    },
+    {
+      "name": "pay-deep-link-self",
+      "durationSeconds": 18.638,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "pay-deep-link-unknown-recipient",
+      "durationSeconds": 17.427,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "send-insufficient-funds",
+      "durationSeconds": 18.255,
+      "status": "failed",
+      "failureMessage": "Element not found: Id matching regex: center-action-button"
+    },
+    {
+      "name": "send",
+      "durationSeconds": 66.168,
+      "status": "failed",
+      "failureMessage": "Assertion is false: id: confirm-request-button is visible"
+    },
+    {
+      "name": "swap-insufficient-funds",
+      "durationSeconds": 14.326,
+      "status": "failed",
+      "failureMessage": "Assertion is false: id: continue-button is visible"
+    },
+    {
+      "name": "swap-leave-and-recover",
+      "durationSeconds": 14.523,
+      "status": "failed",
+      "failureMessage": "Assertion is false: id: continue-button is visible"
+    },
+    {
+      "name": "swap",
+      "durationSeconds": 14.506,
+      "status": "failed",
+      "failureMessage": "Assertion is false: id: continue-button is visible"
+    }
+  ]
+}
