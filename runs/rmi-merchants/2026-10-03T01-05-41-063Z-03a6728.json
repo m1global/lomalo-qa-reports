@@ -1,0 +1,91 @@
+{
+  "repo": "rmi-merchants",
+  "platform": "ios",
+  "branch": "93/merge",
+  "sha": "03a6728ed40c6867d8b93691d14de966e32cd1c6",
+  "shortSha": "03a6728",
+  "commitUrl": "https://github.com/m1global/rmi-merchant/commit/03a6728ed40c6867d8b93691d14de966e32cd1c6",
+  "runUrl": "https://github.com/m1global/rmi-merchant/actions/runs/37081077468",
+  "timestamp": "2026-10-03T00:12:53.562Z",
+  "fileSafeId": "2026-10-03T01-05-41-063Z-03a6728",
+  "runKey": "37081077468-1",
+  "status": "failed",
+  "totalFlows": 12,
+  "passed": 11,
+  "failed": 1,
+  "totalDurationSeconds": 1815.6890000000003,
+  "flows": [
+    {
+      "name": "start-and-end-session",
+      "durationSeconds": 210.173,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "checkout-invalid-amount",
+      "durationSeconds": 158.976,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "complete-checkout",
+      "durationSeconds": 47.718,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "critical-path",
+      "durationSeconds": 190.969,
+      "status": "failed",
+      "failureMessage": "Element not found: Id matching regex: send-link-button"
+    },
+    {
+      "name": "generate-qr",
+      "durationSeconds": 60.7,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "invoice-invalid-amount",
+      "durationSeconds": 141.926,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "save-draft-then-send",
+      "durationSeconds": 114.354,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "send-to-user",
+      "durationSeconds": 79.507,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "second-wallet-same-org-pin",
+      "durationSeconds": 235.182,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "tab-lock-negative-permission",
+      "durationSeconds": 197.479,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "wrong-pin-then-correct",
+      "durationSeconds": 239.306,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "register",
+      "durationSeconds": 139.399,
+      "status": "passed",
+      "failureMessage": null
+    }
+  ]
+}
