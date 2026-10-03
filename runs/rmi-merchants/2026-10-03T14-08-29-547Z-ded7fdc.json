@@ -1,0 +1,91 @@
+{
+  "repo": "rmi-merchants",
+  "platform": "ios",
+  "branch": "93/merge",
+  "sha": "ded7fdc52d12e0475adddb0ed67e6955739c324e",
+  "shortSha": "ded7fdc",
+  "commitUrl": "https://github.com/m1global/rmi-merchant/commit/ded7fdc52d12e0475adddb0ed67e6955739c324e",
+  "runUrl": "https://github.com/m1global/rmi-merchant/actions/runs/37125925958",
+  "timestamp": "2026-10-03T13:22:26.553Z",
+  "fileSafeId": "2026-10-03T14-08-29-547Z-ded7fdc",
+  "runKey": "37125925958-1",
+  "status": "failed",
+  "totalFlows": 12,
+  "passed": 6,
+  "failed": 6,
+  "totalDurationSeconds": 1431.661,
+  "flows": [
+    {
+      "name": "start-and-end-session",
+      "durationSeconds": 77.624,
+      "status": "failed",
+      "failureMessage": "Assertion is false: id: demo-continue-button is visible"
+    },
+    {
+      "name": "checkout-invalid-amount",
+      "durationSeconds": 121.339,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "complete-checkout",
+      "durationSeconds": 56.99,
+      "status": "failed",
+      "failureMessage": "Assertion is false: id: home-screen is visible"
+    },
+    {
+      "name": "critical-path",
+      "durationSeconds": 176.836,
+      "status": "failed",
+      "failureMessage": "Assertion is false: id: home-screen is visible"
+    },
+    {
+      "name": "generate-qr",
+      "durationSeconds": 58.312,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "invoice-invalid-amount",
+      "durationSeconds": 204.627,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "save-draft-then-send",
+      "durationSeconds": 59.869,
+      "status": "failed",
+      "failureMessage": "Assertion is false: id: home-screen is visible"
+    },
+    {
+      "name": "send-to-user",
+      "durationSeconds": 58.168,
+      "status": "failed",
+      "failureMessage": "Assertion is false: id: home-screen is visible"
+    },
+    {
+      "name": "second-wallet-same-org-pin",
+      "durationSeconds": 125.31,
+      "status": "failed",
+      "failureMessage": "Element not found: Text matching regex: Not Now"
+    },
+    {
+      "name": "tab-lock-negative-permission",
+      "durationSeconds": 184.406,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "wrong-pin-then-correct",
+      "durationSeconds": 190.942,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "register",
+      "durationSeconds": 117.238,
+      "status": "passed",
+      "failureMessage": null
+    }
+  ]
+}
