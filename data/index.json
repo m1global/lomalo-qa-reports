@@ -8,14 +8,14 @@
     "commitUrl": "https://github.com/m1global/rmi-merchant/commit/50b4e56ee11acabee1c3b22e94f29ac8f34784c0",
     "runUrl": "https://github.com/m1global/rmi-merchant/actions/runs/37149228811",
     "timestamp": "2026-10-03T19:49:13.130Z",
-    "fileSafeId": "2026-10-03T19-49-13-130Z-50b4e56",
+    "fileSafeId": "2026-10-03T20-34-04-156Z-50b4e56",
     "runKey": "37149228811-1",
-    "status": "pending",
+    "status": "passed",
     "totalFlows": 12,
-    "passed": null,
-    "failed": null,
-    "totalDurationSeconds": null,
-    "detailPath": null
+    "passed": 12,
+    "failed": 0,
+    "totalDurationSeconds": 1881.2059999999997,
+    "detailPath": "detail.html?run=runs/rmi-merchants/2026-10-03T20-34-04-156Z-50b4e56.json"
   },
   {
     "repo": "rmi-merchants",
