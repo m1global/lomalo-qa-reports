@@ -1,5 +1,23 @@
 [
   {
+    "repo": "rmi-wallet",
+    "platform": "android",
+    "branch": "199/merge",
+    "sha": "ede170cf243dde773fa265af83b74dde8cfdf26b",
+    "shortSha": "ede170c",
+    "commitUrl": "https://github.com/m1global/rmi-wallet/commit/ede170cf243dde773fa265af83b74dde8cfdf26b",
+    "runUrl": "https://github.com/m1global/rmi-wallet/actions/runs/37084455691",
+    "timestamp": "2026-10-03T01:03:08.998Z",
+    "fileSafeId": "2026-10-03T01-23-39-350Z-ede170c",
+    "runKey": "37084455691-1",
+    "status": "passed",
+    "totalFlows": 13,
+    "passed": 13,
+    "failed": 0,
+    "totalDurationSeconds": 648.594,
+    "detailPath": "detail.html?run=runs/rmi-wallet/2026-10-03T01-23-39-350Z-ede170c.json"
+  },
+  {
     "repo": "rmi-merchants",
     "platform": "android",
     "branch": "93/merge",
@@ -52,24 +70,6 @@
     "failed": 1,
     "totalDurationSeconds": 1815.6890000000003,
     "detailPath": "detail.html?run=runs/rmi-merchants/2026-10-03T01-05-41-063Z-03a6728.json"
-  },
-  {
-    "repo": "rmi-wallet",
-    "platform": "android",
-    "branch": "199/merge",
-    "sha": "ede170cf243dde773fa265af83b74dde8cfdf26b",
-    "shortSha": "ede170c",
-    "commitUrl": "https://github.com/m1global/rmi-wallet/commit/ede170cf243dde773fa265af83b74dde8cfdf26b",
-    "runUrl": "https://github.com/m1global/rmi-wallet/actions/runs/37084455691",
-    "timestamp": "2026-10-03T01:03:08.998Z",
-    "fileSafeId": "2026-10-03T01-03-08-998Z-ede170c",
-    "runKey": "37084455691-1",
-    "status": "pending",
-    "totalFlows": 13,
-    "passed": null,
-    "failed": null,
-    "totalDurationSeconds": null,
-    "detailPath": null
   },
   {
     "repo": "rmi-wallet",
