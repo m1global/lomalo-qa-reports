@@ -1,0 +1,91 @@
+{
+  "repo": "rmi-wallet",
+  "platform": "ios",
+  "branch": "199/merge",
+  "sha": "679d5f4c2d328ebe6b018457c76d85d37f96a0e9",
+  "shortSha": "679d5f4",
+  "commitUrl": "https://github.com/m1global/rmi-wallet/commit/679d5f4c2d328ebe6b018457c76d85d37f96a0e9",
+  "runUrl": "https://github.com/m1global/rmi-wallet/actions/runs/37139871016",
+  "timestamp": "2026-10-03T17:16:05.921Z",
+  "fileSafeId": "2026-10-03T17-51-02-592Z-679d5f4",
+  "runKey": "37139871016-1",
+  "status": "failed",
+  "totalFlows": 12,
+  "passed": 8,
+  "failed": 4,
+  "totalDurationSeconds": 639.121,
+  "flows": [
+    {
+      "name": "critical-path",
+      "durationSeconds": 259.617,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "accept-invite-decline",
+      "durationSeconds": 22.836,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "accept-invite-invalid-link",
+      "durationSeconds": 27.732,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "accept-invite-unknown-invitation",
+      "durationSeconds": 32.309,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "pay-deep-link-add-contact",
+      "durationSeconds": 31.773,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "pay-deep-link-happy-path",
+      "durationSeconds": 50.152,
+      "status": "failed",
+      "failureMessage": "Assertion is false: id: confirm-request-button is visible"
+    },
+    {
+      "name": "pay-deep-link-self",
+      "durationSeconds": 38.922,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "pay-deep-link-unknown-recipient",
+      "durationSeconds": 21.915,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "send-insufficient-funds",
+      "durationSeconds": 23.803,
+      "status": "failed",
+      "failureMessage": "Assertion is false: id: home-screen is visible"
+    },
+    {
+      "name": "send",
+      "durationSeconds": 82.642,
+      "status": "failed",
+      "failureMessage": "Assertion is false: \"Available Balance: \\$0\\.00.*\" is not visible"
+    },
+    {
+      "name": "swap-insufficient-funds",
+      "durationSeconds": 36.958,
+      "status": "passed",
+      "failureMessage": null
+    },
+    {
+      "name": "swap",
+      "durationSeconds": 10.462,
+      "status": "failed",
+      "failureMessage": "Assertion is false: \"Show SEND balance\" is visible"
+    }
+  ]
+}
